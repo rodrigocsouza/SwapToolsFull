@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04A2B46A-C6E2-4AE9-8722-CE8DB1DA1545}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SwapMobileWWW</RootNamespace>
+    <AssemblyName>SwapMobileWWW</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HumanAPIClient">
+      <HintPath>..\..\..\..\Users\Rodrigo\Downloads\net_0\HumanAPIClient\HumanAPIClient\bin\Debug\HumanAPIClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\Clientes.aspx" />
+    <Content Include="Admin\Clientes_Detalhes.aspx" />
+    <Content Include="Admin\Modelos.aspx" />
+    <Content Include="Admin\ModelosClientes.aspx" />
+    <Content Include="Admin\Usuarios.aspx" />
+    <Content Include="Images\Icons\access_black.png" />
+    <Content Include="Images\Icons\access_blue.png" />
+    <Content Include="Images\Icons\address_black.png" />
+    <Content Include="Images\Icons\address_blue.png" />
+    <Content Include="Images\Icons\address_book.png" />
+    <Content Include="Images\Icons\archive.png" />
+    <Content Include="Images\Icons\attachment.png" />
+    <Content Include="Images\Icons\barcode.png" />
+    <Content Include="Images\Icons\battery_empty.png" />
+    <Content Include="Images\Icons\battery_full.png" />
+    <Content Include="Images\Icons\battery_half.png" />
+    <Content Include="Images\Icons\blackboard.png" />
+    <Content Include="Images\Icons\block_black.png" />
+    <Content Include="Images\Icons\block_blue.png" />
+    <Content Include="Images\Icons\blog.png" />
+    <Content Include="Images\Icons\blog_accept.png" />
+    <Content Include="Images\Icons\blog_add.png" />
+    <Content Include="Images\Icons\blog_compose.png" />
+    <Content Include="Images\Icons\blog_delete.png" />
+    <Content Include="Images\Icons\blog_private.png" />
+    <Content Include="Images\Icons\bluetooth_black.png" />
+    <Content Include="Images\Icons\bluetooth_blue.png" />
+    <Content Include="Images\Icons\bookmark.png" />
+    <Content Include="Images\Icons\box.png" />
+    <Content Include="Images\Icons\box_open.png" />
+    <Content Include="Images\Icons\briefcase.png" />
+    <Content Include="Images\Icons\button_black_eject.png" />
+    <Content Include="Images\Icons\button_black_ffw.png" />
+    <Content Include="Images\Icons\button_black_first.png" />
+    <Content Include="Images\Icons\button_black_last.png" />
+    <Content Include="Images\Icons\button_black_pause.png" />
+    <Content Include="Images\Icons\button_black_play.png" />
+    <Content Include="Images\Icons\button_black_rec.png" />
+    <Content Include="Images\Icons\button_black_repeat.png" />
+    <Content Include="Images\Icons\button_black_rew.png" />
+    <Content Include="Images\Icons\button_black_stop.png" />
+    <Content Include="Images\Icons\button_blue_eject.png" />
+    <Content Include="Images\Icons\button_blue_ffw.png" />
+    <Content Include="Images\Icons\button_blue_first.png" />
+    <Content Include="Images\Icons\button_blue_last.png" />
+    <Content Include="Images\Icons\button_blue_pause.png" />
+    <Content Include="Images\Icons\button_blue_play.png" />
+    <Content Include="Images\Icons\button_blue_rec.png" />
+    <Content Include="Images\Icons\button_blue_repeat.png" />
+    <Content Include="Images\Icons\button_blue_rew.png" />
+    <Content Include="Images\Icons\button_blue_stop.png" />
+    <Content Include="Images\Icons\button_grey_eject.png" />
+    <Content Include="Images\Icons\button_grey_ffw.png" />
+    <Content Include="Images\Icons\button_grey_first.png" />
+    <Content Include="Images\Icons\button_grey_last.png" />
+    <Content Include="Images\Icons\button_grey_pause.png" />
+    <Content Include="Images\Icons\button_grey_play.png" />
+    <Content Include="Images\Icons\button_grey_rec.png" />
+    <Content Include="Images\Icons\button_grey_repeat.png" />
+    <Content Include="Images\Icons\button_grey_rew.png" />
+    <Content Include="Images\Icons\button_grey_stop.png" />
+    <Content Include="Images\Icons\calculator.png" />
+    <Content Include="Images\Icons\calendar.png" />
+    <Content Include="Images\Icons\camera.png" />
+    <Content Include="Images\Icons\cd.png" />
+    <Content Include="Images\Icons\certificate.png" />
+    <Content Include="Images\Icons\chart_bar.png" />
+    <Content Include="Images\Icons\chart_pie.png" />
+    <Content Include="Images\Icons\chip.png" />
+    <Content Include="Images\Icons\clock.png" />
+    <Content Include="Images\Icons\coffee.png" />
+    <Content Include="Images\Icons\comments.png" />
+    <Content Include="Images\Icons\comment_accept.png" />
+    <Content Include="Images\Icons\comment_add.png" />
+    <Content Include="Images\Icons\comment_delete.png" />
+    <Content Include="Images\Icons\comment_edit.png" />
+    <Content Include="Images\Icons\comment_private.png" />
+    <Content Include="Images\Icons\compass.png" />
+    <Content Include="Images\Icons\copy.png" />
+    <Content Include="Images\Icons\credit_cards.png" />
+    <Content Include="Images\Icons\credit_card_amex.png" />
+    <Content Include="Images\Icons\credit_card_mastercard.png" />
+    <Content Include="Images\Icons\credit_card_visa.png" />
+    <Content Include="Images\Icons\currency_black_dollar.png" />
+    <Content Include="Images\Icons\currency_black_euro.png" />
+    <Content Include="Images\Icons\currency_black_pound.png" />
+    <Content Include="Images\Icons\currency_black_yuan.png" />
+    <Content Include="Images\Icons\currency_blue_dollar.png" />
+    <Content Include="Images\Icons\currency_blue_euro.png" />
+    <Content Include="Images\Icons\currency_blue_pound.png" />
+    <Content Include="Images\Icons\currency_blue_yuan.png" />
+    <Content Include="Images\Icons\database_active.png" />
+    <Content Include="Images\Icons\database_inactive.png" />
+    <Content Include="Images\Icons\delivery.png" />
+    <Content Include="Images\Icons\design.png" />
+    <Content Include="Images\Icons\email.png" />
+    <Content Include="Images\Icons\email_accept.png" />
+    <Content Include="Images\Icons\email_add.png" />
+    <Content Include="Images\Icons\email_compose.png" />
+    <Content Include="Images\Icons\email_delete.png" />
+    <Content Include="Images\Icons\email_forward.png" />
+    <Content Include="Images\Icons\email_open.png" />
+    <Content Include="Images\Icons\email_reply.png" />
+    <Content Include="Images\Icons\email_send.png" />
+    <Content Include="Images\Icons\exchange.png" />
+    <Content Include="Images\Icons\file_download.png" />
+    <Content Include="Images\Icons\file_upload.png" />
+    <Content Include="Images\Icons\filter.png" />
+    <Content Include="Images\Icons\folder.png" />
+    <Content Include="Images\Icons\folder_add.png" />
+    <Content Include="Images\Icons\folder_block.png" />
+    <Content Include="Images\Icons\folder_delete.png" />
+    <Content Include="Images\Icons\folder_download.png" />
+    <Content Include="Images\Icons\folder_email.png" />
+    <Content Include="Images\Icons\folder_open.png" />
+    <Content Include="Images\Icons\folder_private.png" />
+    <Content Include="Images\Icons\folder_search.png" />
+    <Content Include="Images\Icons\folder_sent.png" />
+    <Content Include="Images\Icons\folder_upload.png" />
+    <Content Include="Images\Icons\folder_user.png" />
+    <Content Include="Images\Icons\game_pad.png" />
+    <Content Include="Images\Icons\gear.png" />
+    <Content Include="Images\Icons\gift.png" />
+    <Content Include="Images\Icons\globe.png" />
+    <Content Include="Images\Icons\harddisk.png" />
+    <Content Include="Images\Icons\help_black.png" />
+    <Content Include="Images\Icons\help_blue.png" />
+    <Content Include="Images\Icons\home.png" />
+    <Content Include="Images\Icons\inbox.png" />
+    <Content Include="Images\Icons\info_black.png" />
+    <Content Include="Images\Icons\info_blue.png" />
+    <Content Include="Images\Icons\ipod.png" />
+    <Content Include="Images\Icons\key.png" />
+    <Content Include="Images\Icons\keyboard.png" />
+    <Content Include="Images\Icons\label.png" />
+    <Content Include="Images\Icons\label_black_buy.png" />
+    <Content Include="Images\Icons\label_black_hot.png" />
+    <Content Include="Images\Icons\label_black_new.png" />
+    <Content Include="Images\Icons\label_blue_buy.png" />
+    <Content Include="Images\Icons\label_blue_hot.png" />
+    <Content Include="Images\Icons\label_blue_new.png" />
+    <Content Include="Images\Icons\laptop.png" />
+    <Content Include="Images\Icons\link.png" />
+    <Content Include="Images\Icons\lock.png" />
+    <Content Include="Images\Icons\micphone.png" />
+    <Content Include="Images\Icons\mobile.png" />
+    <Content Include="Images\Icons\monitor.png" />
+    <Content Include="Images\Icons\mouse.png" />
+    <Content Include="Images\Icons\music.png" />
+    <Content Include="Images\Icons\news.png" />
+    <Content Include="Images\Icons\notepad.png" />
+    <Content Include="Images\Icons\outbox.png" />
+    <Content Include="Images\Icons\paste.png" />
+    <Content Include="Images\Icons\pencil.png" />
+    <Content Include="Images\Icons\photo.png" />
+    <Content Include="Images\Icons\power_black.png" />
+    <Content Include="Images\Icons\power_blue.png" />
+    <Content Include="Images\Icons\print.png" />
+    <Content Include="Images\Icons\puzzle.png" />
+    <Content Include="Images\Icons\receipt.png" />
+    <Content Include="Images\Icons\recycle_bin.png" />
+    <Content Include="Images\Icons\rss_black.png" />
+    <Content Include="Images\Icons\rss_blue.png" />
+    <Content Include="Images\Icons\save.png" />
+    <Content Include="Images\Icons\saving.png" />
+    <Content Include="Images\Icons\search.png" />
+    <Content Include="Images\Icons\shopping_bag.png" />
+    <Content Include="Images\Icons\shopping_basket.png" />
+    <Content Include="Images\Icons\shopping_basket_2.png" />
+    <Content Include="Images\Icons\shopping_cart.png" />
+    <Content Include="Images\Icons\shopping_trolley.png" />
+    <Content Include="Images\Icons\speaker.png" />
+    <Content Include="Images\Icons\speaker_mute.png" />
+    <Content Include="Images\Icons\star_full.png" />
+    <Content Include="Images\Icons\star_half.png" />
+    <Content Include="Images\Icons\star_none.png" />
+    <Content Include="Images\Icons\sticker_black.png" />
+    <Content Include="Images\Icons\sticker_black_50off.png" />
+    <Content Include="Images\Icons\sticker_black_sale.png" />
+    <Content Include="Images\Icons\sticker_blue.png" />
+    <Content Include="Images\Icons\sticker_blue_50off.png" />
+    <Content Include="Images\Icons\sticker_blue_sale.png" />
+    <Content Include="Images\Icons\sub_black_accept.png" />
+    <Content Include="Images\Icons\sub_black_add.png" />
+    <Content Include="Images\Icons\sub_black_delete.png" />
+    <Content Include="Images\Icons\sub_black_down.png" />
+    <Content Include="Images\Icons\sub_black_next.png" />
+    <Content Include="Images\Icons\sub_black_prev.png" />
+    <Content Include="Images\Icons\sub_black_remove.png" />
+    <Content Include="Images\Icons\sub_black_rotate_ccw.png" />
+    <Content Include="Images\Icons\sub_black_rotate_cw.png" />
+    <Content Include="Images\Icons\sub_black_up.png" />
+    <Content Include="Images\Icons\sub_blue_accept.png" />
+    <Content Include="Images\Icons\sub_blue_add.png" />
+    <Content Include="Images\Icons\sub_blue_delete.png" />
+    <Content Include="Images\Icons\sub_blue_down.png" />
+    <Content Include="Images\Icons\sub_blue_next.png" />
+    <Content Include="Images\Icons\sub_blue_prev.png" />
+    <Content Include="Images\Icons\sub_blue_remove.png" />
+    <Content Include="Images\Icons\sub_blue_rotate_ccw.png" />
+    <Content Include="Images\Icons\sub_blue_rotate_cw.png" />
+    <Content Include="Images\Icons\sub_blue_up.png" />
+    <Content Include="Images\Icons\tag.png" />
+    <Content Include="Images\Icons\telephone_black.png" />
+    <Content Include="Images\Icons\telephone_blue.png" />
+    <Content Include="Images\Icons\tools.png" />
+    <Content Include="Images\Icons\unlock.png" />
+    <Content Include="Images\Icons\user.png" />
+    <Content Include="Images\Icons\user_group.png" />
+    <Content Include="Images\Icons\vcards.png" />
+    <Content Include="Images\Icons\video.png" />
+    <Content Include="Images\Icons\wallet.png" />
+    <Content Include="Images\Icons\warning_black.png" />
+    <Content Include="Images\Icons\warning_blue.png" />
+    <Content Include="Images\Icons\windows.png" />
+    <Content Include="Images\logo_swap_grande.png" />
+    <Content Include="SMS_Upload.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Clientes_Detalhes.aspx.cs">
+      <DependentUpon>Clientes_Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Clientes_Detalhes.aspx.designer.cs">
+      <DependentUpon>Clientes_Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Modelos.aspx.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Modelos.aspx.designer.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModelosClientes.aspx.cs">
+      <DependentUpon>ModelosClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModelosClientes.aspx.designer.cs">
+      <DependentUpon>ModelosClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler_MO.cs" />
+    <Compile Include="MOHuman.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs" />
+    <Compile Include="SMS_Upload.aspx.cs">
+      <DependentUpon>SMS_Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMS_Upload.aspx.designer.cs">
+      <DependentUpon>SMS_Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SwapMobileRoleProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyGeneration.dOOdads\MyGeneration.dOOdads_2005.csproj">
+      <Project>{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}</Project>
+      <Name>MyGeneration.dOOdads_2005</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SwapMobile\SwapMobile.csproj">
+      <Project>{B0B26C04-3833-4CEB-AC52-6DDBEB083B48}</Project>
+      <Name>SwapMobile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34735</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://127.0.0.1/SwapMobileWWW</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

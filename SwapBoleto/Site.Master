@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SwapMobileWWW.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Images/logo_swap_grande.png" 
+                        Height="38px" Width="99px" style="vertical-align:bottom" 
+                        onclick="ImageButton2_Click" />   
+    &nbsp;Mobile tools
+                </h1>
+            </div>
+             <div id="menuAdmin" style="position: absolute;top: 0px;left:40%;width:350px">
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Admin">
+                            <ContentTemplate>
+                              <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/Admin/Clientes.aspx" Text="Clientes" 
+                                            Value="Clientes" />
+                                        <asp:MenuItem NavigateUrl="~/Admin/Modelos.aspx" Text="Modelos" 
+                                            Value="Usuarios"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Informações" />
+                                    </Items>
+                                </asp:Menu>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
+                </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Entrar</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Olá <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" 
+                            LogoutText="Sair" LogoutPageUrl="~/" LoginText="Entrar"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/SMS_Upload.aspx" Text="SMS em Lote" 
+                            Value="SMS em Lote"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/SMS_Individual.aspx" Text="SMS Individual" 
+                            Value="SMS Individual"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Informações"/>
+                    </Items>
+                </asp:Menu>
+               
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div> 
+        <div class="footer">
+        Swap Informática - 2012   
+    </div>
+    </div>
+   
+    </form>
+</body>
+</html>
